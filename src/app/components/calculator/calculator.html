@@ -1,0 +1,23 @@
+<div class="bg-green-100 flex flex-col items-center justify-center ">
+    <h1 class="font-extrabold text-2xl mt-4">Calculator</h1>
+    <div class="pb-5 pt-4">
+        <span class="mx-4">Enter first number: </span>
+        <input [(ngModel)]="first" type="number">
+    </div>
+
+    <div>
+        <span class="mx-1">Enter second  number: </span>
+        <input [(ngModel)]="second" type="number">
+    </div>
+
+    <div class=" flex mt-4">
+        <button class="bg-black text-white px-2 rounded-full mx-2" (click)="add()">+</button>
+        <button class="bg-black text-white px-2 rounded-full mx-2" (click)="subtract()">-</button>
+        <button class="bg-black text-white px-2 rounded-full mx-2" (click)="multilply()">*</button>
+        <button class="bg-black text-white px-2 rounded-full mx-2" (click)="divide()">/</button>
+    </div>
+
+    <div>
+        <p>Result is :{{result}}</p>
+    </div>
+</div>
