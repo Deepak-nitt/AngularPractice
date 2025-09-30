@@ -5,10 +5,11 @@ import { Todos } from "./components/todos/todos";
 import { Calculator } from "./components/calculator/calculator";
 import { Showpassword } from "./components/showpassword/showpassword";
 import { RandomQuotes } from "./components/random-quotes/random-quotes";
+import { Modal } from './components/modal/modal';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Livetext, Todos, Calculator, Showpassword, RandomQuotes],
+  imports: [RouterOutlet, Livetext, Todos, Calculator, Showpassword, RandomQuotes,Modal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

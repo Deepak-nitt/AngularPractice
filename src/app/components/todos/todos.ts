@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 export class Todos {
    todo:string[]=[];
    newtodo:string='';
+   editIndex: number| null =null;
+   editText ="";
 
    addTodo(){
     if(this.newtodo.trim()!==''){
@@ -26,6 +28,8 @@ export class Todos {
    deleteTodo(index:number){
     this.todo.splice(index , 1)
    }
+
+
 
 
 

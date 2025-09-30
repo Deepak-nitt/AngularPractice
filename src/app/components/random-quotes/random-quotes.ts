@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+
 
 interface Quote {
   text: string;
@@ -6,7 +8,7 @@ interface Quote {
 }
 @Component({
   selector: 'app-random-quotes',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './random-quotes.html',
   styleUrl: './random-quotes.css',
 })
