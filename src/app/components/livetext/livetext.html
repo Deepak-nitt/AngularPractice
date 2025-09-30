@@ -1,0 +1,15 @@
+<div class="flex flex-col items-center justify-center h-screen bg-gray-300">
+  <div class="items-center flex flex-col bg-slate-500 px-10 py-10 rounded-2xl ">
+    <h1 class="font-semibold">Live text</h1>
+    <input
+      name="name"
+      [(ngModel)]="name"
+      class="bg-slate-200 mx-2 px-2 mt-2 mb-2 py-2 rounded-xl"
+      type="text"
+      placeholder="enter something"
+    />
+  </div>
+  <div class="bg-slate-100 mt-10 px-5 py-4 rounded-lg">
+    <h1>You have Written here: {{name}}</h1>
+  </div>
+</div>
