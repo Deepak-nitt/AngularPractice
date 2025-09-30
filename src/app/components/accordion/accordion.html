@@ -1,0 +1,11 @@
+<div class="flex flex-col items-center justify-center bg-slate-200">
+  <div class="mt-3 mb-6">
+    <h1 class="flex items-center justify-center font-extrabold text-2xl">FAQs</h1>
+    <div *ngFor="let que of faq; let i = index">
+      <button class="font-serif text-xl" (click)="toggle(i)">
+       Q.{{i+1}} {{ que.question }}
+      </button>
+      <p class="bg-slate-300 font-mono py-2  px-3" *ngIf="que.isOpen">Answer: {{ que.answer }}</p>
+    </div>
+  </div>
+</div>
